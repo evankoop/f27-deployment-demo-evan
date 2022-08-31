@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 
 
 
-const port = 4005
+const port = process.env.PORT || 4005
 
 app.listen(port, () => {console.log(`Port is running on port ${port}`)})
 
